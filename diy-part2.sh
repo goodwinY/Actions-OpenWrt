@@ -27,7 +27,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 sed -i "s/Openwrt /Openwrt build $(TZ=UTC-8 date "+%Y.%m.%d") @ Openwrt /g" package/lean/default-settings/files/zzz-default-settings
 
 #5．修改插件名字
-sed -i 's /"高级重启"/"关机"/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
+#sed -i 's /"高级重启"/"关机"/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
 
 #6．修改上游DNS
 #sed -i "2i # network config" package/lean/default-settings/files/zzz-default-settings
