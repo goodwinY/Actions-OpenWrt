@@ -22,3 +22,13 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 
 # netkeeper
 # sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
+
+#poweroff
+echo 'src-git poweroff https://github.com/esirplayground/luci-app-poweroff' >>feeds.conf.default
+# autotimeset
+# echo 'src-git autotimeset  https://github.com/sirpdboy/luci-app-autotimeset' >>feeds.conf.default
+#theme-argon
+# echo 'src-git themeArgon https://github.com/jerrykuku/luci-theme-argon' >>feeds.conf.default
+sed -i '$a src-git themeArgon https://github.com/jerrykuku/luci-theme-argon.git;18.06' feeds.conf.default
+#bandwidthd 流量统计
+echo 'src-git bandwidthd https://github.com/AlexZhuo/luci-app-bandwidthd' >>feeds.conf.default
