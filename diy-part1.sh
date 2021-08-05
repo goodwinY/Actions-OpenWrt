@@ -31,8 +31,6 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 #theme-argon
 # echo 'src-git themeArgon https://github.com/jerrykuku/luci-theme-argon' >>feeds.conf.default
 #sed -i '$a src-git themeArgon https://github.com/jerrykuku/luci-theme-argon.git;18.06' feeds.conf.default
-#bandwidthd 流量统计
-#echo 'src-git bandwidthd https://github.com/AlexZhuo/luci-app-bandwidthd' >>feeds.conf.default
 
 #强制添加包
 #1.poweroff
@@ -42,5 +40,3 @@ cd package/lean
 rm -rf luci-theme-argon 
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 cd ../..
-#3.bandwidthd 流量统计
-# git clone https://github.com/AlexZhuo/luci-app-bandwidthd.git package/luci-app-bandwidthd
