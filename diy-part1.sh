@@ -15,28 +15,25 @@
 
 # Add a feed source
 #adg smartdns
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
-echo 'src-git kenzoSmall https://github.com/kenzok8/small.git' >>feeds.conf.default
+# echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+# echo 'src-git kenzoSmall https://github.com/kenzok8/small.git' >>feeds.conf.default
 #lean ssr
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # netkeeper
 # sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
 
-#poweroff
-#echo 'src-git poweroff https://github.com/esirplayground/luci-app-poweroff' >>feeds.conf.default
-# autotimeset
-# echo 'src-git autotimeset  https://github.com/sirpdboy/luci-app-autotimeset' >>feeds.conf.default
-#theme-argon
-# echo 'src-git themeArgon https://github.com/jerrykuku/luci-theme-argon' >>feeds.conf.default
-#sed -i '$a src-git themeArgon https://github.com/jerrykuku/luci-theme-argon.git;18.06' feeds.conf.default
 
 #强制添加包
 #1.poweroff
 git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 #2.theme-argon
-cd package/lean  
-rm -rf luci-theme-argon 
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-cd ../..
+#cd package/lean  
+#rm -rf luci-theme-argon 
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+#cd ../..
+
+#SSR ADG smartdns
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
