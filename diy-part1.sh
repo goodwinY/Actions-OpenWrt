@@ -11,15 +11,15 @@
 #
 
 # Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
 #adg smartdns
 # echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 # echo 'src-git kenzoSmall https://github.com/kenzok8/small.git' >>feeds.conf.default
 #lean ssr
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # netkeeper
 # sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
@@ -35,5 +35,18 @@ git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-p
 #cd ../..
 
 #SSR ADG smartdns
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+# echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+# echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+
+
+
+rm -rf package/lean/luci-lib-docker
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package.git;main' feeds.conf.default
+sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+git clone https://github.com/lisaac/luci-app-dockerman ./package/luci-app-dockerman
+git clone https://github.com/lisaac/luci-lib-docker ./package/lean/luci-lib-docker
+git clone https://github.com/KFERMercer/luci-app-tcpdump.git ./package/luci-app-tcpdump
+git clone https://github.com/zzsj0928/luci-app-pushbot.git ./package/luci-app-pushbot
