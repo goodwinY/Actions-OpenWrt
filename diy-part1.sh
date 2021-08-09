@@ -41,3 +41,4 @@
 
 #test
 #sed -i '$a src-git goodwin https://github.com/281677160/openwrt-package' feeds.conf.default
+#sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
