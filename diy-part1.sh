@@ -21,20 +21,20 @@
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 #cd ../..
 
-rm -rf package/luci-app-dockerman
-rm -rf package/lean/luci-lib-docker
-rm -rf package/luci-app-tcpdump
-rm -rf package/luci-app-pushbot
-rm -rf package/luci-app-poweroff
-rm -rf package/luci-app-feed-netkeeper
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package.git;main' feeds.conf.default
-sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
-git clone https://github.com/lisaac/luci-lib-docker package/lean/luci-lib-docker
-git clone https://github.com/KFERMercer/luci-app-tcpdump.git package/luci-app-tcpdump
-git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
-git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
-git clone -b LUCI-LUA-UCITRACK https://github.com/CCnut/feed-netkeeper package/luci-app-feed-netkeeper
+#rm -rf package/luci-app-dockerman
+#rm -rf package/lean/luci-lib-docker
+#rm -rf package/luci-app-tcpdump
+#rm -rf package/luci-app-pushbot
+#rm -rf package/luci-app-poweroff
+#rm -rf package/luci-app-feed-netkeeper
+#sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package.git;main' feeds.conf.default
+#sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+#git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
+#git clone https://github.com/lisaac/luci-lib-docker package/lean/luci-lib-docker
+#git clone https://github.com/KFERMercer/luci-app-tcpdump.git package/luci-app-tcpdump
+#git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
+#git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
+#git clone -b LUCI-LUA-UCITRACK https://github.com/CCnut/feed-netkeeper package/luci-app-feed-netkeeper
