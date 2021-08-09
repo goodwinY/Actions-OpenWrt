@@ -38,3 +38,6 @@
 #git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
 #git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 #git clone -b LUCI-LUA-UCITRACK https://github.com/CCnut/feed-netkeeper package/luci-app-feed-netkeeper
+
+#test
+sed -i '$a src-git goodwin https://github.com/281677160/openwrt-package' feeds.conf.default
