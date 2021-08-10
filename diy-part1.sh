@@ -27,8 +27,8 @@ rm -rf package/goodwin/luci-app-poweroff
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-sed -i '$a src-git lisaac/dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default 
-sed -i '$a src-git lisaac/dockerlib https://github.com/lisaac/luci-lib-docker' feeds.conf.default 
+sed -i '$a src-git lisaacdockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default 
+sed -i '$a src-git lisaacdockerlib https://github.com/lisaac/luci-lib-docker' feeds.conf.default 
 
 #git clone https://github.com/lisaac/luci-app-dockerman package/goodwin/luci-app-dockerman
 #git clone https://github.com/lisaac/luci-lib-docker package/goodwin/luci-lib-docker
