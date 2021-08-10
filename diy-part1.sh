@@ -40,5 +40,5 @@
 #git clone -b LUCI-LUA-UCITRACK https://github.com/CCnut/feed-netkeeper package/luci-app-feed-netkeeper
 
 #test
-#sed -i '$a src-git goodwin https://github.com/281677160/openwrt-package' feeds.conf.default
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i '$a src-git goodwin https://github.com/281677160/openwrt-package' feeds.conf.default
+#sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
