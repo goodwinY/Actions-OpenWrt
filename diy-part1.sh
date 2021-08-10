@@ -14,7 +14,7 @@
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # netkeeper 创翼
-sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
+sed -i '$a src-git netkeeper https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
 
 #rm -rf package/goodwin/luci-app-tcpdump
 rm -rf package/goodwin/luci-app-pushbot
