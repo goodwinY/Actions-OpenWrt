@@ -28,7 +28,7 @@ sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCIT
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git lisaacdockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default 
-sed -i '$a src-git lisaacdockerman https://github.com/lisaac/luci-lib-docker' feeds.conf.default 
+sed -i '$a src-git lisaacdockerlib https://github.com/lisaac/luci-lib-docker' feeds.conf.default 
 sed -i '$a src-git pushbot https://github.com/zzsj0928/luci-app-pushbot' feeds.conf.default 
 sed -i '$a src-git poweroff https://github.com/esirplayground/luci-app-poweroff' feeds.conf.default 
 
