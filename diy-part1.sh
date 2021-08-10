@@ -15,9 +15,6 @@
 
 # netkeeper 创翼
 # sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
-#theme-argon 主题  
-#rm -rf package/lean/luci-theme-argon 
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/goodwin/luci-theme-argon
 
 #rm -rf package/goodwin/luci-app-dockerman
 #rm -rf package/lean/luci-lib-docker
