@@ -21,4 +21,4 @@ git clone https://github.com/CHN-beta/rkp-ipid.git package/rkp-ipid
 #svn checkout https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 
 ## 加入 luci-app-ua2f 模块和 brukamen-mac-luci
-echo 'src-git Brukamen https://github.com/lucikap/Brukamen.git' >> feeds.conf.default
+#echo 'src-git Brukamen https://github.com/lucikap/Brukamen.git' >> feeds.conf.default
