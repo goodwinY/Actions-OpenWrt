@@ -40,6 +40,8 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
+        pwd
+        ls -all
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
         sudo docker image prune --all --force
         sudo -E apt-get -qq update
@@ -49,7 +51,6 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-        pwd
 
     - name: Clone source code
       working-directory: /workdir
