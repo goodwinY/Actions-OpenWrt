@@ -57,6 +57,11 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
+    - name: Fix line endings for diy scripts
+      run: |
+        sed -i 's/\r$//' $DIY_P1_SH
+        sed -i 's/\r$//' $DIY_P2_SH
+
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
