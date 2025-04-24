@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: 家用ipv6路由器
+name: 家用ipv6路由器-docker
 
 on:
   repository_dispatch:
