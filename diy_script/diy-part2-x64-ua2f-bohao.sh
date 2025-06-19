@@ -48,7 +48,7 @@ CONFIG_PACKAGE_kmod-rkp-ipid=y
 CONFIG_PACKAGE_ua2f=y
 CONFIG_UA2F_CUSTOM_USER_AGENT=y
 CONFIG_UA2F_USER_AGENT_STRING="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
-#CONFIG_PACKAGE_luci-app-ua2f=y
+CONFIG_PACKAGE_luci-app-ua2f=y
 #CONFIG_PACKAGE_brukamen-mac-luci=y
 EOT
 
