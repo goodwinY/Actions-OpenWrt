@@ -20,7 +20,7 @@
 # CONFIG_NF_CT_NETLINK=y
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_generate
 target=$(grep "^CONFIG_TARGET" .config --max-count=1 | awk -F "=" '{print $1}' | awk -F "_" '{print $3}')
 for configFile in $(ls target/linux/$target/config*)
 do
