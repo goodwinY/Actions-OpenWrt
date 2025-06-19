@@ -17,6 +17,7 @@ echo 'src-git UA2F https://github.com/Zxilly/UA2F.git' >> feeds.conf.default
 
 ## 加入 RKP-IPID 模块
 git clone https://github.com/CHN-beta/rkp-ipid.git package/rkp-ipid
+
 ## 加入 openclash 模块
 #svn checkout https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 
