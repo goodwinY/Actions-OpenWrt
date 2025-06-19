@@ -10,6 +10,9 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+## 加入 istore
+sed -i '$a src-git istore https://github.com/linkease/istore;main' feeds.conf.default
+
 ## 加入 UA2F 模块
 #git clone https://github.com/Zxilly/UA2F.git package/UA2F
 #git clone -b 20221020T133401 https://github.com/Zxilly/UA2F.git package/UA2F
