@@ -84,7 +84,11 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a
+      run: |
+        cd openwrt && ./scripts/feeds update -a
+        rm ./package/feeds/packages/ua2f
+        rm ./feeds/packages/net/ua2f
+        git clone https://github.com/Zxilly/UA2F.git package/ua2f
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
