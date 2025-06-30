@@ -16,7 +16,7 @@ sed -i '$a src-git istore https://github.com/linkease/istore;main' feeds.conf.de
 ## 加入 UA2F 模块
 #git clone https://github.com/Zxilly/UA2F.git package/UA2F
 #git clone -b 20221020T133401 https://github.com/Zxilly/UA2F.git package/UA2F
-#echo 'src-git UA2F https://github.com/Zxilly/UA2F.git' >> feeds.conf.default
+echo 'src-git UA2F https://github.com/Zxilly/UA2F.git' >> feeds.conf.default
 
 ## 加入 RKP-IPID 模块
 git clone https://github.com/CHN-beta/rkp-ipid.git package/rkp-ipid
